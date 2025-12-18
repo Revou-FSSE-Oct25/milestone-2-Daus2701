@@ -87,6 +87,48 @@ body {
   margin: auto;
 }
 
+/* PARALLAX HERO */
+.hero {
+  height: 100vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("assets/console-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 👈 PARALLAX */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.hero-content a {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff4757;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* CONTENT SECTION */
+.section {
+  background: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+
 .footer {
             background-color: #222;
             color: white;
