@@ -10,10 +10,13 @@ function checkGuess() {
   }
 
   if (userGuess === secretNumber) {
+    console.log("Correct guess!");
     result.textContent = "🎉 Correct! You win!";
   } else if (userGuess > secretNumber) {
+    console.log("Number too high!");
     result.textContent = "📉 Too high!";
   } else {
+    console.log("Number too low!");
     result.textContent = "📈 Too low!";
   }
 }

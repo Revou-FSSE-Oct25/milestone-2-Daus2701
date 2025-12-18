@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess The Number</title>
+    <title>The Clicker</title>
     <link rel="stylesheet" href="/index-style.css">
 </head>
 <body>
+
     <header class="header">
-        <div class="logo"><a href="/index.html"><span>Game</span>rooms</div></a>
+        <div class="logo"><a href="index.html"><span>Game</span>rooms</div></a>
         <div class="hamburger" id="hamburger">☰</div>
 
         <nav class="nav" id="nav">
@@ -17,7 +18,7 @@
                     <a href="#">Games</a>
                     <ul class="dropdown-menu">
                         <li><a href="pages/guess-the-number.html">Guess The Number</a></li>
-                        <li><a href="rock-paper-scissors">R/S/P</a></li>
+                        <li><a href="rock-paper-scissors">R-P-S</a></li>
                         <li><a href="clicker">The Clicker</a></li>
                     </ul>
                 </li>
@@ -26,27 +27,26 @@
             </ul>
         </nav>
     </header>
+    
     <main>
         <section class="section">
-            <h1>Guess the Number 🎯</h1>
-            <p>Enter a number between 1 and 100</p>
+            <h1>🖱️ Clicker Game</h1>
+            <p>Click the button as many times as you can!</p>
 
-            <input type="number" id="guessInput">
-            <button onclick="checkGuess()">Guess</button>
-
-            <p id="result"></p>
+            <h2 id="score">0</h2>
+            <button onclick="increaseScore()">Click Me!</button>
         </section>
     </main>
 
-  <script src="guess-the-number.js"></script>
-  
-<footer class="footer">
+    <script src="clicker.js"></script>
+
+    <footer class="footer">
         <div class="footer-content">
             <div class="footer-columns">
                 <div class="footer-column">
                     <h3>Games</h3>
                     <ul>
-                        <li><a href="guess-the-number">Guess The Number</a></li>
+                        <li><a href="pages/guess-the-number.html">Guess The Number</a></li>
                         <li><a href="rock-paper-scissors">R/S/P</a></li>
                         <li><a href="clicker">The Clicker</a></li>
                     </ul>
