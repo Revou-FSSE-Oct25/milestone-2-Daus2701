@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   background: #1f1f1f;
   color: white;
+  
 }
 
 /* ===== HEADER ===== */
@@ -189,60 +190,60 @@ body {
 }
 
 .footer {
-            background-color: #222;
-            color: white;
-            padding: 40px 20px 20px;
-            margin-top: auto;
-        }
+  background-color: #222;
+  color: white;
+  padding: 40px 20px 20px;
+  margin-top: auto;
+}
         
-        .footer-content {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
         
-        /* Footer columns */
-        .footer-columns {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
+/* Footer columns */
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
         
-        .footer-column {
-            width: 25%;
-            padding: 0 10px;
-        }
+.footer-column {
+  width: 25%;
+  padding: 0 10px;
+}
         
-        .footer-column h3 {
-            color: #6a9eff;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
+.footer-column h3 {
+  color: #6a9eff;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
         
-        .footer-column ul {
-            list-style: none;
-        }
+.footer-column ul {
+  list-style: none;
+}
         
-        .footer-column li {
-            margin-bottom: 8px;
-        }
+.footer-column li {
+  margin-bottom: 8px;
+}
         
-        .footer-column a {
-            color: #ccc;
-            text-decoration: none;
-        }
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+}
         
-        .footer-column a:hover {
-            color: white;
-        }
+.footer-column a:hover {
+  color: white;
+}
         
-        /* Footer bottom */
-        .footer-bottom {
-            border-top: 1px solid #444;
-            padding-top: 20px;
-            text-align: center;
-            color: #aaa;
-            font-size: 14px;
-        }
+/* Footer bottom */
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+}
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R-P-S</title>
     <link rel="stylesheet" href="/index-style.css">
+    <link rel="stylesheet" href="games.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo"><a href="index.html"><span>Game</span>rooms</div></a>
+        <div class="logo"><a href="/index.html"><span>Game</span>rooms</div></a>
         <div class="hamburger" id="hamburger">☰</div>
 
         <nav class="nav" id="nav">
@@ -16,47 +17,50 @@
                 <li class="dropdown">
                     <a href="#">Games</a>
                     <ul class="dropdown-menu">
-                        <li><a href="pages/guess-the-number.html">Guess The Number</a></li>
-                        <li><a href="rock-paper-scissors">R-P-S</a></li>
-                        <li><a href="clicker">The Clicker</a></li>
+                        <li><a href="guess-the-number.html">Guess The Number</a></li>
+                        <li><a href="r-p-s.html">R-P-S</a></li>
+                        <li><a href="clicker.html">The Clicker</a></li>
                     </ul>
                 </li>
-                <li><a href="about">About Us</a></li>
-                <li><a href="contact">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="section">
+        <section class="game-container">
             <h1>✊✋✌ Rock Paper Scissors</h1>
 
             <button onclick="play('rock')">Rock</button>
             <button onclick="play('paper')">Paper</button>
             <button onclick="play('scissors')">Scissors</button>
 
-            <p id="rpsResult"></p>
+            <p id="rpsResult" class="game-result"></p>
+
+            <a href="/index.html" class="back-home">🎮 Back to Home</a>
+
         </section>
     </main>
 
     <script src="r-p-s.js"></script>
-    
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-columns">
                 <div class="footer-column">
                     <h3>Games</h3>
                     <ul>
-                        <li><a href="pages/guess-the-number.html">Guess The Number</a></li>
-                        <li><a href="rock-paper-scissors">R/S/P</a></li>
-                        <li><a href="clicker">The Clicker</a></li>
+                        <li><a href="guess-the-number.html">Guess The Number</a></li>
+                        <li><a href="r-p-s.html">R/S/P</a></li>
+                        <li><a href="clicker.html">The Clicker</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Studio</h3>
                     <ul>
-                        <li><a href="about">About Us</a></li>
-                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 

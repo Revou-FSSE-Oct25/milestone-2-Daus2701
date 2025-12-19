@@ -1,0 +1,42 @@
+/* ABOUT CARD */
+.about-card {
+  max-width: 800px;
+  margin: 40px auto 0;
+  background: #1c1c1c;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.about-card h2 {
+  margin-top: 25px;
+  color: #6a9eff;
+}
+
+.about-card p {
+  margin-top: 10px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* TECH LIST */
+.tech-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.tech-list li {
+  margin: 5px 0;
+}
+
+/* BACK HOME BUTTON */
+.back-home {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  background: #333;
+  padding: 12px;
+  border-radius: 5px;
+  color: #4fd1ff;
+}

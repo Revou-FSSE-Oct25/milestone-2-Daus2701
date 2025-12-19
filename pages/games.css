@@ -1,0 +1,64 @@
+/* GLOBAL BACKGROUND */
+body {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("/assets/console-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* GAME CARD */
+.game-container {
+  max-width: 500px;
+  margin: 100px auto;
+  background: #1c1c1c;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+/* GAME INPUTS & BUTTONS */
+.game-container input,
+.game-container button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.game-container button {
+  background: #ff4757;
+  color: white;
+  cursor: pointer;
+}
+
+.game-container button:hover {
+  opacity: 0.9;
+}
+
+/* GAME RESULT TEXT */
+.game-result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+/* BACK HOME BUTTON */
+.back-home {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  background: #333;
+  padding: 12px;
+  border-radius: 5px;
+  color: #4fd1ff;
+}

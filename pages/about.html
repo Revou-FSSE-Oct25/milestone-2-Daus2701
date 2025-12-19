@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Clicker</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="/index-style.css">
-    <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
-
     <header class="header">
         <div class="logo"><a href="/index.html"><span>Game</span>rooms</div></a>
         <div class="hamburger" id="hamburger">☰</div>
@@ -30,19 +29,49 @@
     </header>
 
     <main>
-        <section class="game-container">
-            <h1>🖱️ Clicker Game</h1>
-            <p>Click the button as many times as you can!</p>
+        <section class="section">
+            <h1>About Us</h1>
+            <p>Learn more about this project and its creator</p>
 
-            <h2 id="score">0</h2>
-            <button onclick="increaseScore()">Click Me!</button>
+            <div class="about-card">
 
-            <a href="/index.html" class="back-home">🎮 Back to Home</a>
+                <h2>🎮 Our Project</h2>
+                <p>
+                    This website is a mini game hub featuring simple browser games such as
+                    Number Guessing, Rock Paper Scissors, and a Clicker Game.
+                    The project is built using HTML, CSS, and JavaScript as part of a learning journey
+                    into web development.
+                </p>
 
+                <h2>🚀 Our Goal</h2>
+                <p>
+                    The goal of this project is to practice front-end development skills,
+                    understand basic game logic, and create interactive web pages that are
+                    fun and easy to use.
+                </p>
+
+                <h2>🧑‍💻 About the Developer</h2>
+                <p>
+                    Hi! I am a beginner software engineer currently learning web development.
+                    This project is part of my portfolio and showcases my progress in HTML,
+                    CSS, and JavaScript.
+                </p>
+
+                <h2>🛠️ Technologies Used</h2>
+                <ul class="tech-list">
+                    <li>HTML5</li>
+                    <li>CSS3 (Flexbox & Grid)</li>
+                    <li>JavaScript (ES6)</li>
+                </ul>
+
+                <!-- BACK TO HOME -->
+                <a href="index.html" class="back-home">🎮 Back to Home</a>
+
+            </div>
         </section>
     </main>
 
-    <script src="clicker.js"></script>
+    <script src="/index.js"></script>
 
     <footer class="footer">
         <div class="footer-content">
@@ -59,7 +88,7 @@
                 <div class="footer-column">
                     <h3>Studio</h3>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about">About Us</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -70,6 +99,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

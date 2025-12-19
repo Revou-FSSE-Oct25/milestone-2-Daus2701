@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Clicker</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="/index-style.css">
-    <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-
     <header class="header">
         <div class="logo"><a href="/index.html"><span>Game</span>rooms</div></a>
         <div class="hamburger" id="hamburger">☰</div>
@@ -30,19 +29,60 @@
     </header>
 
     <main>
-        <section class="game-container">
-            <h1>🖱️ Clicker Game</h1>
-            <p>Click the button as many times as you can!</p>
+        <section class="section">
+            <h1>📬 Contact Us!</h1>
+            <p>We want to hear from you, in order to keep us moving forward</p>
+            <p>Feel free to reach us out and leave a message!</p>
 
-            <h2 id="score">0</h2>
-            <button onclick="increaseScore()">Click Me!</button>
+            <!-- CONTACT CARD -->
+            <div class="contact-card">
 
-            <a href="/index.html" class="back-home">🎮 Back to Home</a>
+                <!-- CONTACT INFO -->
+                <div class="contact-item">
+                    <h3>📞 Phone</h3>
+                    <p>+60 11-1189-2072</p>
+                </div>
 
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p>fhardiansyah91@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📍 Address</h3>
+                    <p>The Vertival Corporate Tower, Kuala Lumpur<br>
+                        Malaysia
+                    </p>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <form id="contactForm">
+                    <h3>✉️ Send a Message</h3>
+
+                    <input type="text" id="name" placeholder="Your Name">
+                    <input type="email" id="email" placeholder="Your Email">
+                    <textarea id="message" placeholder="Your Message"></textarea>
+
+                    <button type="submit">Send Message</button>
+                    <p id="formResult"></p>
+                </form>
+
+                <!-- SOCIAL MEDIA -->
+                <div class="social-links">
+                    <a href="#" title="GitHub">🐙</a>
+                    <a href="#" title="LinkedIn">💼</a>
+                    <a href="#" title="Twitter">🐦</a>
+                </div>
+
+                <!-- BACK TO HOME -->
+                <a href="/index.html" class="back-home">🎮 Back to Home</a>
+
+            </div>
         </section>
     </main>
 
-    <script src="clicker.js"></script>
+    <script src="index.js"></script>
+    <script src="contact.js"></script>
 
     <footer class="footer">
         <div class="footer-content">
@@ -70,6 +110,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
