@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo"><a href="/index.html"><span>Game</span>rooms</div></a>
+        <div class="logo"><a href="/index.html"><span>Revo</span>Fun</div></a>
         <div class="hamburger" id="hamburger">☰</div>
 
         <nav class="nav" id="nav">
@@ -33,9 +33,11 @@
             <p>Enter a number between 1 and 100</p>
 
             <input type="number" id="guessInput">
-            <button onclick="checkGuess()">Guess</button>
+            <button id="guessButton" onclick="checkGuess()">Guess</button>
+            <button id="resetButton" onclick="resetGame()">Reset</button>
 
             <p id="result" class="game-result"></p>
+            <p>Attempts left: <span id="attempts"></span></p>
 
             
             <a href="/index.html" class="back-home">🎮 Back to Home</a>
@@ -66,7 +68,7 @@
                 </div>
                 
             <div class="footer-bottom">
-                <p>©2025 Gamerooms, Inc. All Rights Reserved.</p>
+                <p>©2025 RevoFun, Inc. All Rights Reserved.</p>
                 <p>Daus2701</p>
             </div>
         </div>
