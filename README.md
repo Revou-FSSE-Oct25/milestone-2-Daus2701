@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/PAiQDgnZ)
 
-# Gamerooms
+# RevoFun
 
 A mini **game hub website** built using **HTML, CSS, and JavaScript**.
 This project is showcasing theree simple browser games and demonstartes core front-end developlemt concepts
@@ -11,7 +11,7 @@ link: https://revou-fsse-oct25.github.io/milestone-2-Daus2701/
 
 # Overview
 
-**Gamerooms** is a beginner web project that mandatory for us as a **RevoU** students, to complete our 
+**RevoFun** is a beginner web project that mandatory for us as a **RevoU** students, to complete our 
 **Milestones 2** in pursuing our bootcamp in **RevoU**.
 This website includes:
 - A landing page with game previews
@@ -58,4 +58,4 @@ will be my concern in the future and I hope that I still have the courage to kee
 Subarqah Firdhaus Hardiansyah
 REVOU FSSE Madrid
 
-© 2025 Gamerooms, Inc. All Rights Reserved.
+© 2025 RevoFun, Inc. All Rights Reserved.
