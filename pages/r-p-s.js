@@ -1,18 +1,59 @@
 const choices = ["rock", "paper", "scissors"];
+let playerScore = 0;
+let computerScore = 0;
 
-function play(userChoice) {
-  const computerChoice = choices[Math.floor(Math.random() * 3)];
-  const result = document.getElementById("rpsResult");
+const statusEl = document.getElementById("status");
+const playerScoreEl = document.getElementById("playerScore");
+const computerScoreEl = document.getElementById("computerScore");
+const buttons = document.querySelectorAll(".choices button");
 
-  if (userChoice === computerChoice) {
-    result.textContent = `🤝 Draw! Both chose ${userChoice}`;
-  } else if (
-    (userChoice === "rock" && computerChoice === "scissors") ||
-    (userChoice === "paper" && computerChoice === "rock") ||
-    (userChoice === "scissors" && computerChoice === "paper")
+function playGame(playerChoice) {
+  disableButtons();
+  statusEl.textContent = "🤔 Computer is choosing...";
+
+  setTimeout(() => {
+    const computerChoice = choices[Math.floor(Math.random() * 3)];
+    const result = getResult(playerChoice, computerChoice);
+
+    updateScore(result);
+    statusEl.textContent = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
+
+    enableButtons();
+  }, 700);
+}
+
+function getResult(player, computer) {
+  if (player === computer) return "😐 It's a draw!";
+  if (
+    (player === "rock" && computer === "scissors") ||
+    (player === "paper" && computer === "rock") ||
+    (player === "scissors" && computer === "paper")
   ) {
-    result.textContent = `🎉 You win! ${userChoice} beats ${computerChoice}`;
-  } else {
-    result.textContent = `😢 You lose! ${computerChoice} beats ${userChoice}`;
+    return "🎉 You win!";
   }
+  return "😢 You lose!";
+}
+
+function updateScore(result) {
+  if (result.includes("win")) playerScore++;
+  if (result.includes("lose")) computerScore++;
+
+  playerScoreEl.textContent = playerScore;
+  computerScoreEl.textContent = computerScore;
+}
+
+function resetGame() {
+  playerScore = 0;
+  computerScore = 0;
+  statusEl.textContent = "Make your move!";
+  playerScoreEl.textContent = 0;
+  computerScoreEl.textContent = 0;
+}
+
+function disableButtons() {
+  buttons.forEach(btn => btn.disabled = true);
+}
+
+function enableButtons() {
+  buttons.forEach(btn => btn.disabled = false);
 }

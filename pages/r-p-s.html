@@ -31,11 +31,20 @@
         <section class="game-container">
             <h1>✊✋✌ Rock Paper Scissors</h1>
 
-            <button onclick="play('rock')">Rock</button>
-            <button onclick="play('paper')">Paper</button>
-            <button onclick="play('scissors')">Scissors</button>
+            <div class="scoreboard">
+                <p>🧑 Player: <span id="playerScore">0</span></p>
+                <p>💻 Computer: <span id="computerScore">0</span></p>
+            </div>
 
-            <p id="rpsResult" class="game-result"></p>
+            <div class="choices">
+                <button onclick="playGame('rock')">✊ Rock</button>
+                <button onclick="playGame('paper')">✋ Paper</button>
+                <button onclick="playGame('scissors')">✌ Scissors</button>
+            </div>
+
+            <p id="status">Make your move!</p>
+
+            <button onclick="resetGame()">🔄 Reset</button>
 
             <a href="/index.html" class="back-home">🎮 Back to Home</a>
 

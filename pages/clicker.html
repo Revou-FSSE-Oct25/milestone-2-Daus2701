@@ -31,11 +31,17 @@
 
     <main>
         <section class="game-container">
-            <h1>🖱️ Clicker Game</h1>
-            <p>Click the button as many times as you can!</p>
+            <h1>🖱️ The Clicker</h1>
+            <p>Click the button as fast as you can before the time runs out!</p>
+
+            <p>⏱️ Time Left: <span id="time">10</span>s</p>
+            <p>⭐ High Score: <span id="highScore">0</span></p>
 
             <h2 id="score">0</h2>
-            <button onclick="increaseScore()">Click Me!</button>
+            <button id="clickButton" onclick="increaseScore()">Click Me!</button>
+            <button onclick="resetButton()">Reset</button>
+
+            <p id="gameStatus"></p>
 
             <a href="/index.html" class="back-home">🎮 Back to Home</a>
 
